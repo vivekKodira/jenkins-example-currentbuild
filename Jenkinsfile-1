@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'echo Hello World'
         echo "Build number is ${currentBuild.number}"
-        echo "Build number is ${currentBuild.changeSets.size()}"
+        echo "Build changeSet is ${currentBuild.changeSets.size()}"
       }
     }
   }
